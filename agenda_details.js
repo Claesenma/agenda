@@ -287,6 +287,7 @@ async function load_page3() {
               w = 95*(input_div.clientWidth-10-y-60)/(input_div.clientWidth)
               if (mobileCheck()) {w=100}
             }
+            if (y==0 && !mobileCheck()) {w = 100*(input_div.clientWidth-70)/(input_div.clientWidth)}
             if (!mobileCheck()) {locatie.setAttribute("style", "width:"+w+"%;padding: 5px 20px 5px 40px;background-image: url('images/pin.png'); background-position: 10px 6px; background-repeat: no-repeat; background-size: 20px;")}
             else {locatie.setAttribute("style", "width:"+w+"%;");}
             locatie.classList.add("input3");
@@ -512,9 +513,10 @@ async function load_page3() {
             var w = 100
             var locatie2 = document.createElement("input");
             if (y != 0) {
-              w = 95*(input_div2.clientWidth-10-y)/(input_div2.clientWidth)
+              w = 95*(input_div2.clientWidth-10-y-60)/(input_div2.clientWidth)
               if (mobileCheck()) {w=100}
             }
+            if (y==0 && !mobileCheck()) {w = 100*(input_div2.clientWidth-70)/(input_div2.clientWidth)}
             if (!mobileCheck()) {locatie2.setAttribute("style", "background-image: url('images/pin.png'); background-position: 10px 6px; background-repeat: no-repeat;")}
             if (!mobileCheck()) {locatie2.setAttribute("style", "width:"+w+"%;padding: 5px 20px 5px 40px;background-image: url('images/pin.png'); background-position: 10px 6px; background-repeat: no-repeat; background-size: 20px;")}
             else {locatie2.setAttribute("style", "width:"+w+"%;");}
@@ -727,7 +729,7 @@ async function load_page3() {
 
       var y=75
       var locatie1 = document.createElement("input");
-      var w = 95*(input_div1.clientWidth-10-y)/(input_div1.clientWidth)
+      var w = 95*(input_div1.clientWidth-10-y-60)/(input_div1.clientWidth)
       if (mobileCheck()) {w=100}
       if (!mobileCheck()) {locatie1.setAttribute("style", "width:"+w+"%;padding: 5px 20px 5px 40px;background-image: url('images/pin.png'); background-position: 10px 6px; background-repeat: no-repeat; background-size: 20px;")}
       else {locatie1.setAttribute("style", "width:"+w+"%;");}
