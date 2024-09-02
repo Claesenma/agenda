@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {background-color: #dfdfdf;}
+
+
+div {margin-top: 20px; margin-left: 3.5% ;position: relative; }
+
+#div1{top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute; width:100%}
+
+.a {font-weight: bold; font-size: 1.2rem; color: #4d4d4d; padding: 10px; width: 10%; background-color: #A4D0A4; text-decoration: none; border-radius: 10px;}
+.a1 {color: white;}
+.a:hover {background-color: #6eb86e;}
+p {font-size: 1.5rem; padding: 10px 0 10px 10px; margin: 0px; color: white;}
+
+.menu {
+  border-bottom-style: solid;
+  width: 100%;
+  height: 46px;
+  position: fixed;
+  margin: 0;
+  top:0;
+  left:0;
+  background-color: #617A55;
+}
+
+#icon{height: 70%; top: 50%; left: 1%; transform: translate(-1%, -50%); position: relative; display: inline-block;}
+.title {font-weight: bold; font-size: 1.75rem; padding: 10px 0 10px 20px; margin: 0; text-decoration: none; color: #FFF8D6;display:inline-block;}
+.title1-1 {top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute; color: #FFF8D6;font-weight: bold; font-size: 1rem; padding: 0px 0 0px 10px; margin: 0; text-decoration: none;}
+.bottom-div {text-align: center; border-top-style: solid;width: 100%;height: 30px;position: fixed;margin: 0;bottom:0;left:0;background-color: #617A55;}
+
+h2 {font-weight: bold; font-size: 3rem; color: #4d4d4d; margin-bottom: 5%;}
+h3 {font-weight: bold; font-size: 1.7rem; color: #4d4d4d; margin-bottom: 5%;}
+
+.red-span{color:red; font-size: 0.9rem;}
+
+.log-in-div {background-color: white; margin: 0 20% 0 20%; padding: 5%}
+.img2 {height:30px; display: inline-block; padding-bottom: 0; margin: 0;}
+.log-in-div h2 {display: inline-block; font-weight: bold;}
+.log-in-div h3 {font-weight: bold;}
+.log-in-div h4 {font-weight: bold; font-size: 1.2rem;}
+.log-in-div .a2 {color: blue; text-decoration: none; font-family: "Segoe UI Webfont"}
+.log-in-div .a2:hover {text-decoration: underline;}
+input {border-color: blue; height: 30px; font-size: 0.8rem; width: 80%;border-top-style: none; border-left-style: none; border-right-style: none;}
+input:focus {outline: none;border-width: medium;}
+
+.terug-div {text-align: center;}
+.terug-div a {font-size: 2rem; padding: 5px 5%;}

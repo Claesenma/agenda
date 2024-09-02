@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title id="page-title">Agenda - Mijn account</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body id="body">
+    <div id="home-div" class="home-div">
+      <div class="" id="home-div1">
+        <p id="home-title">Mijn account</p>
+      </div>
+      <div class="btn-div" id="btn-div"></div>
+      <div class="btn-div" id="btn2-div"></div>
+      <br>
+
+    </div>
+
+    <div class="bottom-div" id="bottom-div">
+      <p class="title1-1" id="bottom-title">© 2024 Mateo Claesen</p>
+    </div>
+    <div class="menu" id="menu" onmouseover="menu_hover2()" onmouseout="menu_hover1()">
+      <a class="title" id="title" href="#">Agenda</a>
+      <hr class="hr">
+      <a id="account_button" class="account_button btn" href="#">Mijn Account</a>
+      <a id="settings_button" class="settings_button btn" href="#">Instellingen</a>
+      <a id="log_out_button" class="log_out_button btn" href="start.html">Afmelden</a>
+
+    </div>
+
+
+    <div id="modal" class="modal">
+    </div>
+
+    <script src="account.js"></script>
+    <script>
+    // Get the modal
+    var modal = document.getElementById('modal');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal && window.loading == false) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+  </body>
+</html>
