@@ -153,6 +153,7 @@ function load_page3(gebruikersnaam, wachtwoord) {
   var text1 = document.createElement("span");
   text1.innerHTML = "...er iets gewijzigd is in één van je agenda's"
   div1.appendChild(text1);
+  home_div.appendChild(document.createElement("br"));
 
   div2 = document.createElement("div");
   div2.classList.add("div");
@@ -167,6 +168,7 @@ function load_page3(gebruikersnaam, wachtwoord) {
   var text2 = document.createElement("span");
   text2.innerHTML = "...er de volgende dag een activiteit gepland staat"
   div2.appendChild(text2);
+  home_div.appendChild(document.createElement("br"));
 
   div3 = document.createElement("div");
   div3.classList.add("div");
