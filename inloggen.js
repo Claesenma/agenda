@@ -58,14 +58,14 @@ function inloggen() {
   }
   if (gebruikersnaam.includes(" ") == true || gebruikersnaam.includes("&") == true || gebruikersnaam.includes("=") == true || gebruikersnaam.includes("%") == true) {
     error = true;
-    error_message = "Er mogen geen spaties, &-tekens of =-tekens in je gebruikersnaam staan!";
+    error_message = "Er mogen geen spaties, &-tekens of =-tekens in je e-mailadres staan!";
   }
 
   if (error == true) {
     alert(error_message);
   }
   else {
-    inloggen2(gebruikersnaam, wachtwoord);
+    inloggen2(gebruikersnaam.toLowerCase(), wachtwoord);
   }
 }
 
