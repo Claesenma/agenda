@@ -49,16 +49,16 @@ function inloggen() {
 
   if (wachtwoord.includes(" ") == true || wachtwoord.includes("&") == true || wachtwoord.includes("=") == true || wachtwoord.includes("%") == true || wachtwoord.includes("+") == true || wachtwoord.includes("-") == true) {
     error = true;
-    error_message = "Er mogen geen spaties, +-tekens, --tekens, %-tekens, &-tekens of =-tekens in je wachtwoord staan!";
+    error_message = "Er mogen geen spaties, %-tekens, &-tekens of =-tekens in je wachtwoord staan!";
   }
 
   if (gebruikersnaam == "" || gebruikersnaam == undefined || gebruikersnaam == null) {
     error = true;
     error_message = "Je hebt geen gebruikersnaam ingegeven.";
   }
-  if (gebruikersnaam.includes(" ") == true || gebruikersnaam.includes("&") == true || gebruikersnaam.includes("=") == true || gebruikersnaam.includes("%") == true || gebruikersnaam.includes("+") == true || gebruikersnaam.includes("-") == true) {
+  if (gebruikersnaam.includes(" ") == true || gebruikersnaam.includes("&") == true || gebruikersnaam.includes("=") == true || gebruikersnaam.includes("%") == true) {
     error = true;
-    error_message = "Er mogen geen spaties, +-tekens, --tekens, %-tekens, &-tekens of =-tekens in je gebruikersnaam staan!";
+    error_message = "Er mogen geen spaties, &-tekens of =-tekens in je gebruikersnaam staan!";
   }
 
   if (error == true) {
