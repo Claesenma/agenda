@@ -222,6 +222,9 @@ function load_page3(gebruikersnaam, wachtwoord) {
     edit_btn = document.createElement("a");
     edit_btn.classList.add("edit-settings-btn");
     edit_btn.innerHTML = "Instellingen aanpassen"
+    if (!window.data1[agenda]["beheerders"].includes(gebruikersnaam)) {
+      edit_btn.innerHTML = "Kleur wijzigen"
+    }
     edit_btn.href = "#"
     div2.appendChild(edit_btn);
     edit_btn.addEventListener('click', function () {
