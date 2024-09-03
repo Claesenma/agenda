@@ -420,7 +420,7 @@ function agenda_verwijderen() {
 
 function agenda_verlaten() {
   var leden3 = [...window.leden_lijst2]
-  leden3.splice(gebruikersnaam,1)
+  leden3.splice(window.leden_lijst2.indexOf(gebruikersnaam),1)
   var beheerders3 = [...window.beheerder_lijst]
   if (beheerders3.includes(gebruikersnaam)) {
     beheerders3.splice(beheerders3.indexOf(gebruikersnaam),1)
