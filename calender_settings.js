@@ -448,6 +448,7 @@ function save_settings(leden, beheerders, kleur) {
       window.edit = false;
       window.loading = false;
       container.removeChild(loader)
+      loading2("wait")
       load_page3(gebruikersnaam, wachtwoord);
     }
     else {
