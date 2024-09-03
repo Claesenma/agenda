@@ -230,11 +230,11 @@ function load_page3(gebruikersnaam, wachtwoord) {
     if (window.leden_lijst2.length > 1) {
       leave_agenda_btn = document.createElement("a");
       leave_agenda_btn.classList.add("edit-settings-btn");
-      leave_agenda_btn.innerHTML = "Agenda verlaten"
+      leave_agenda_btn.innerHTML = "Lidmaatschap beëindigen"
       leave_agenda_btn.setAttribute("style", "background-color: #f44336;")
       leave_agenda_btn.href = "#"
       leave_agenda_btn.addEventListener('click', function () {
-        create_modal2("agenda_verlaten", agenda+" verlaten", "Weet je zeker dat je deze agenda wilt verlaten?", "Verlaten");});
+        create_modal2("agenda_verlaten", agenda+" beëindigen", "Weet je zeker dat je je lidmaatschap voor deze agenda wilt beëndigen?", "Beëindigen");});
       div3.appendChild(leave_agenda_btn);
     }
     if (window.beheerder_lijst.includes(gebruikersnaam)) {
